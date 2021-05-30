@@ -1,0 +1,6 @@
+# DO Connection info
+export TF_VAR_do_token=[DO TOKEN]
+export TF_VAR_ssh_fingerprint=$(ssh-keygen -E md5 -lf [Location of public key] | awk '{print $2}' | sed 's/MD5://')
+
+# My system info
+export TF_VAR_domain_name=[domain name]
