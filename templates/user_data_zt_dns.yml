@@ -1,0 +1,32 @@
+#cloud-config
+groups:
+  - ops
+system_info:
+  default_user:
+    name: ops
+    gecos: "Operations User"
+    primary_group: ops
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ${public_ssh_key}
+timezone: "America/New_York"
+write_files:
+- encoding: b64
+  path: /root/install_zerotier.sh
+  permissions: 0744
+  owner: root:root
+  content: ${install_zerotier}
+- encoding: b64
+  path: /var/lib/zerotier-one/token
+  permissions: 600
+  owner: zerotier-one:zerotier
+  content: ${token_file}
+
+package_update: true
+package_upgrade: true
+packages:
+  - nmap
+  - net-tools
+runcmd:
+  # Install and join ZeroTier client
+  - /root/install_zerotier.sh
