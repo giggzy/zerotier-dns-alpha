@@ -48,3 +48,5 @@ terraform.rc
 
 # Oh I hate the directory, Ignore.
 **/.DS_Store
+
+extras/
