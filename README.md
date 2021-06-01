@@ -8,4 +8,6 @@ Steps:
 - Create DO droplet
   - Install via cloud-init the needed ZT software
   - Manually (for now) add token
+  
+
 
