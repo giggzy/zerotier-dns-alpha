@@ -1,10 +1,11 @@
 # zerotier-dns-alphja
 
-A helper repo to setup/teardown a testing environment for zerotier dns.
+A helper repo to setup/teardown a testing environment for zerotier dns using terraform mainly.
 
 ## Assuptions
 - DigitalOcean as host
-- MOAR
+- Terraform workflow
+- more, but not definded yet.
 
 
 ## Steps:
