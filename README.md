@@ -1,13 +1,13 @@
-# zerotier-dns-alpha
+# zerotier-dns-alphja
 
-- Terraform stuff
-- Env Variables
+A helper repo to setup/teardown a testing environment for zerotier dns.
+
+
 
 Steps:
 - create new ZT network
 - Create DO droplet
   - Install via cloud-init the needed ZT software
-  - Manually (for now) add token
-  
+- environment variables pass in configuration
 
 
