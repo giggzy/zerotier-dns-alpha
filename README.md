@@ -2,9 +2,12 @@
 
 A helper repo to setup/teardown a testing environment for zerotier dns.
 
+## Assuptions
+- DigitalOcean as host
+- MOAR
 
 
-Steps:
+## Steps:
 - create new ZT network
 - Create DO droplet
   - Install via cloud-init the needed ZT software
